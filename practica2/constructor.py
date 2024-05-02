@@ -3,6 +3,7 @@ import numpy as np
 import gala.potential as gp
 from gala.units import galactic
 import matplotlib.pyplot as plt
+import gala.dynamics as gd
 
 def create_gal_potential(total_mass, r_s, dm_fraction=0.73,
                     disk_total=0.7,bulge_total=0.29,
