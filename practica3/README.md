@@ -1,0 +1,2 @@
+# Practica 3: Enjambres
+La practica considera las orbitas primeramente integradas como una especie de parametro inicial, para luego generar enjambres(cumulos estelares) de particulas para integrar en el tiempo, esto se realiza para entender con claridad como los potenciales influyen en los movimientos de los cuerpos parte del sistema, al igual que como pequeños cambios en las condiciones iniciales de una orbita desembocan en grandes cambios a mayores tiempos, entrando levemente en teoria del caos en los casos de potenciales mas complejos.

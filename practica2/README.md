@@ -1,0 +1,2 @@
+# Practica 2
+El directorio contiene tanto el script encargado de construir el potencial a utilizar en la practica como el notebook que contiene la exploracion de los contenidos paso a paso. La practica esta enfocada en las orbitas en un dado potencial y su representacion en una superficie de poincare, para el entendimiento de las integrales de movimiento y los significados que tienen esta para la forma de la orbita a considerar.
