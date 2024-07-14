@@ -616,7 +616,7 @@ $t_j = \frac{N_j}{B(t) L_T}$
 
 Donde el valor de $B(t)$ es definido segun la edad de la poblacion estelar considerada, sin embargo incluso en amplios rangos de edades varia de manera minima, en este trabajo se asume un valor de $B(t)=1.5$, obteniendo entonces el valor de $L_T$:
 
-$L_T = 5.06$
+$L_T = 5.06 \times 10^{7} L_\odot$
 
 Entonces seleccionamos una region del CMD que represente una etapa post-MS, contamos la cantidad de estrellas dentro y reemplazamos en la ecuacion de $t_j$, junto con $L_T$ y nuestro valor de $B(t)$. Se muestran entonces las estrellas seleccionadas para el conteo en el CMD:
 
@@ -624,17 +624,25 @@ Entonces seleccionamos una region del CMD que represente una etapa post-MS, cont
 
 Entonces finalmente obtenemos la siguiente cantidad de estrellas en la region mostrada del CMD:
 
-$N_j = 848$
+$N_j = 501$
 
 Finalmente entregandonos para $t_j$:
 
-$t_j=1.11 \times 10^{6}_{[yrs]}$
+$t_j=6.597 \times 10^{6}_{[yrs]}$
 
 ### 4.6: Ajuste de isocronas
 
-Finalmente se ajustan isocronas a nuestro CMD obtenido para estimar la edad, en este caso se utiliza un metodo "eyeball", por lo que se consideran distintos rangos de edades y metalicidades, mostrados a continuacion:
+Finalmente se ajustan isocronas a nuestro CMD obtenido para estimar la edad, en este caso se utiliza un metodo "eyeball", por lo que se consideran distintos rangos de edades y metalicidades, mostrados sobre el CMD a continuacion:
 
-![](downloaddolphot1.jpg)
+![](CMD_isochrones_1.png)
+
+Debido a que las estrellas resueltas que utilizamos en el CMD, no nos permiten distingir la turnoff sequence limitando nuestro estudio para estimar la edad de la poblacion con isocronas, sin embargo, si podemos estimar la metalicidad, y tener una idea de las multiples poblaciones estelares.
+
+A continuacion se muestra el CMD con las isocronas consideradas como factibles en la poblacion estelar:
+
+![](CMD_isochrones_2.png)
+
+Se concluye entonces que las poblaciones estelares que se observan deben de tener una edad de $log(t_{age}) = 9$ y metalicidades([M/H]) abarcando desde -1.0 hasta -1.8.
 
 ## Paso 5: Recopilacion de lo obtenido
 
@@ -989,39 +997,37 @@ InterpPSFlib = 1        #interpolate PSF library spatially
 
 ### 5.C: CMD con isocrona ajustada
 
-CMD del catalogo junto con isocrona final considerada:
+CMD del catalogo junto con isocronas finales consideradas, el analisis completo esta en la seccion 4.6:
 
-![](downloaddolphot1.jpg)
+![](CMD_isochrones_2.png)
+
+Entonces al utilizar un metodo 'eyeball', se concluye que las poblaciones estelares en NGC3031, especificamente en el campo considerado debe de tener metalicidades([M/H]) que abarcan desde -1.0 a -1.8, con una edad de $t_{age} = 10^{9}_{[yrs]}$, sin embargo debido a que el CMD de las estrellas resueltas consideradas no contienen un claro punto para el comienzo de la turn off sequence, esto ultimo es dificil de concluir.
 
 ### 5.D: Valores estimados de la magnitud de la TRGB y $t_j$
 
 Se estimo que la magnitud aparente de la TRGB es:
 
-$m_{TRGB} = 23$
+$m_{TRGB} = 23.704_{[mag]}$
 
 entregando asi una distancia de:
 
-$d=3.24_{Mpc}$
+$d=3.468_{Mpc}$
 
 Finalmente se obtuvo:
 
-$t_j=13_{Gyrs}$
+$t_j=6.597 \times 10^{5}_{yrs}$
 
 ### 5.E: Imagen en banda F606W con estrellas superpuestas
 
-Imagen en banda F606W con las estrellas indicada en circulos amarillos.
+Imagen en banda F606W con las estrellas utilizadas en el analisis marcadas en amarillo.
 
-![](downloaddolphot1.jpg)
+![](imagensuperpuesta.png)
 
 ### 5.F: Discusion: Poblaciones encontradas, completitud y crowding
 
 Tomando en consideracion los resultados obtenidos, se estima que NGC3031 tiene una edad estimada de ~10Gyrs con una metalicidad de $[Fe/H]=121$, si bien se consideraron los efectos que podria tener el crowding, el tamaño de pixel considerado aun asi puede ocultar multiples estrellas bajo un mismo pixel. Aun asi el trabajo presentado a tomado los parametros para considerar estrellas resueltas de calidad estipulados en [Radburn-Smith et al. 2011](google.com).
 
-En cuanto a completitud la magnitud aparente mas tenue del catalogo utilizado en el CMD es $m_{min}=20$, que en el caso de NGC3031, el cual se encuentra a una distancia estimada en el documento de $d=3.24Mpc$, supone una magnitud absoluta alcanzada de $M_min=-15$, dejando asi igualmente las estrellas mas debiles del sistema fuera del analisis. Sabiendo entonces que son las estrellas de menor masa las que contribuyen la mayoria del brillo en las galaxias, esto es una limitacion del estudio presentado.
+En cuanto a completitud la magnitud aparente mas tenue del catalogo utilizado en el CMD es $m_{min}=26.437$, que en el caso de NGC3031, el cual se encuentra a una distancia estimada en el documento de $d=3.468_{Mpc}$, supone una magnitud absoluta alcanzada de $M_min=-1.264$, dejando asi igualmente las estrellas mas debiles del sistema fuera del analisis. Sabiendo entonces que son las estrellas de menor masa las que contribuyen la mayoria del brillo en las galaxias, esto es una limitacion del estudio presentado.
 
 Aun asi el ejercicio realizado demuestra como con datos ya presentes y publicos en astronomia es posible realizar evaluaciones concretas de sistemas de estrellas resueltas en el universo, todo realizado con herramientas, datos y metodos publicamente disponibles en la web.
 
-## Apendice
-Seccion de figuras o topicos extra no mencionados en el trabajo.
-
-Aqui se señalan elementos extras realizados durante el desarrollo de la practica, no fueron colocados como parte del cuerpo principal, ya que no responden a especificos puntos de la evaluacion.
